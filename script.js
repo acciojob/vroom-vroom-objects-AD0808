@@ -5,19 +5,20 @@ class Car{
 	}
 }
 
-class SportsCar{
-	constructor(make, model, topSpeed) {
-    super(make, model);
-    this.topSpeed = topSpeed;
-	}
+Car.prototype.getMakeModel = function(){
+	return `${this.make} ${this.model}`
+}
 
-	function getTopSpeed(){
-		return topSpeed;
+class SportsCar{
+		constructor(make, model, topSpeed) {
+	    super(make, model);
+	    this.topSpeed = topSpeed;
 	}
 }
 
-
-
+SportsCar.prototype.getMakeModel = function(){
+	return `${this.topSpeed}`
+}
 
 
 // SportsCar.prototype = Object.create(Car.prototype);
