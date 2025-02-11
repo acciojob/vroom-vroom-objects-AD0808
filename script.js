@@ -6,7 +6,7 @@ class Car{
 }
 
 Car.prototype.getMakeModel = function(){
-	return `${this.make} ${this.model}`
+	return `${this.make} ${this.model}`;
 }
 
 class SportsCar{
@@ -17,7 +17,7 @@ class SportsCar{
 }
 
 SportsCar.prototype.getMakeModel = function(){
-	return `${this.topSpeed}`
+	return this.topSpeed;
 }
 
 
