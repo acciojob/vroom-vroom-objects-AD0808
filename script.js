@@ -16,7 +16,7 @@ class SportsCar{
 	}
 }
 
-SportsCar.prototype.getMakeModel = function(){
+SportsCar.prototype.getTopSpeed = function(){
 	return this.topSpeed;
 }
 
